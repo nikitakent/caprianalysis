@@ -1,7 +1,9 @@
 import sqlalchemy as sa 
 import pandas as pd
-from sqalchemy.orm import sessionmaker
-from datetime import datetime
-import datetime as dt
-import sqlite3
+import numpy as np
+import tweepy
+import os
 
+bearer_token = os.getenv("BEARER_TOKEN")
+
+client = tweepy.Client(bearer_token=bearer_token)
